@@ -9,36 +9,73 @@
   </head>
   <body>
     <div class="grid-container">
-      <div class="grid-ingredients">
-        <button class="bottom-bun" id="bottom-bun" onclick="{onPress(this.id)}">
+      <div class="grid-ingredients" id="grid-ingredients">
+        <button
+          class="bottom-bun"
+          id="bottom-bun"
+          onclick="onPressIngredients(this.id)"
+        >
           <img src="./images/bottom-bun.png" alt="bottom bun" />
         </button>
-        <button class="beef-patty" id="beef-patty" onclick="{onPress(this.id)}">
+        <button
+          class="beef-patty"
+          id="beef-patty"
+          onclick="onPressIngredients(this.id)"
+        >
           <img src="./images/beef-patty.png" alt="beef patty" />
         </button>
-        <button class="cheese" id="cheese" onclick="{onPress(this.id)}">
+        <button
+          class="cheese"
+          id="cheese"
+          onclick="onPressIngredients(this.id)"
+        >
           <img src="./images/cheese.png" alt="cheese" />
         </button>
-        <button class="tomatoes" id="tomatoes" onclick="{onPress(this.id)}">
+        <button
+          class="tomatoes"
+          id="tomatoes"
+          onclick="onPressIngredients(this.id)"
+        >
           <img src="./images/tomatoes.png" alt="tomatoes" />
         </button>
-        <button class="pickles" id="pickles" onclick="{onPress(this.id)}">
+        <button
+          class="pickles"
+          id="pickles"
+          onclick="onPressIngredients(this.id)"
+        >
           <img src="./images/pickles.png" alt="pickles" />
         </button>
-        <button class="onions" id="onions" onclick="{onPress(this.id)}">
+        <button
+          class="onions"
+          id="onions"
+          onclick="onPressIngredients(this.id)"
+        >
           <img src="./images/onions.png" alt="onions" />
         </button>
-        <button class="lettuce" id="lettuce" onclick="{onPress(this.id)}">
+        <button
+          class="lettuce"
+          id="lettuce"
+          onclick="onPressIngredients(this.id)"
+        >
           <img src="./images/lettuce.png" alt="lettuce" />
         </button>
-        <button class="top-bun" id="top-bun" onclick="{onPress(this.id)}">
+        <button
+          class="top-bun"
+          id="top-bun"
+          onclick="onPressIngredients(this.id)"
+        >
           <img src="./images/top-bun.png" alt="top bun" />
         </button>
       </div>
       <div class="grid-plate" id="grid-plate">
-        <div class="plate"><img src="./images/dish.png" alt="dish" /></div>
+        <div class="plate" id="plate">
+          <img src="./images/dish.png" alt="dish" />
+        </div>
+        <button class="ready-to-check" onclick="onPressCheck()">
+          Finished
+        </button>
       </div>
-      <div class="grid-plate-template">
+      <div class="grid-plate-template" id="grid-plate-template">
         <div class="bottom-bun">
           <img src="./images/bottom-bun.png" alt="bottom bun" />
         </div>
