@@ -1,0 +1,105 @@
+body {
+  background-color: darkcyan;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid-ingredients {
+  grid-area: ingredients;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  background-image: url(./images/ingredients-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 33vw;
+  max-height: 99vh;
+}
+
+.grid-ingredients > button {
+  max-height: 100px;
+  background-color: transparent;
+  border: 0px;
+}
+
+.grid-plate-template > div {
+  max-height: 75px;
+}
+
+.grid-plate > button {
+  max-height: 50px;
+  background-color: transparent;
+  border: 0px;
+}
+
+.grid-plate {
+  grid-area: plate;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/plate-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  overflow: auto;
+  max-width: 66vw;
+  max-height: 60vh;
+}
+.grid-plate-template {
+  grid-area: plate-template;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  max-width: 33vw;
+  max-height: 40vh;
+}
+
+.grid-container {
+  height: 100vh;
+  grid-template-columns: 33.3vw;
+  grid-template-rows: 20vh;
+  display: grid;
+  grid-template:
+    "ingredients . plate-template"
+    "ingredients . plate-template"
+    "ingredients plate plate"
+    "ingredients plate plate"
+    "ingredients plate plate";
+  grid-gap: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* .bottom-bun {
+  background-image: url(./images/bottom-bun.png);
+}
+
+.beef-patty {
+  background-image: url(./images/beef-patty.png);
+}
+
+.cheese {
+  background-image: url(./images/cheese.png);
+}
+.lettuce {
+  background-image: url(./images/lettuce.png);
+}
+.onions {
+  background-image: url(./images/onions.png);
+}
+.pickles {
+  background-image: url(./images/pickles.png);
+}
+.tomatoes {
+  background-image: url(./images/tomatoes.png);
+}
+.top-bun {
+  background-image: url(./images/top-bun.png);
+} */
